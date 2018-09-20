@@ -7,14 +7,44 @@ and open the template in the editor.
     Created on : 19/09/2018, 06:57:37 PM
     Author     : Hagane
 */
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Overlock|Permanent+Marker|Shojumaru');
 header {
-    font-family: "Indie Flower";
+    font-family: "Overlock";
     font-size: 20px;
     text-align: center;
+    color: goldenrod;
 }
 footer {
     text-align: right;
-    font-size: 10px;
+    font-size: 13px;
     font-style:  oblique;
+    color: #ffffff;
+    height: 25px;
+    background-image: url(resources/footer_left.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.mexico{
+    font-family: "Permanent Marker";
+    color: #FF0080;
+    letter-spacing: 5px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-top: -40px;
+}
+body{
+    margin-top: 0px;
+    background-color: #659ED5;
+}
+.midsection{
+    padding: 10px;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    border-top: 3px solid #333333;
+    border-bottom: 1px solid #333333;
+    
 }

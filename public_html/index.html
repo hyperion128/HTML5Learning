@@ -9,17 +9,15 @@ and open the template in the editor.
         <title>Destino: Mexico</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--link href="Styles.css" rel="stylesheet"-->
         <style>
             @import "Styles.css";
         </style>
     </head>
-    
     <body>
-        <header>
-            <h1>Destino: Mexico</h1><img src="#" alt="Logo de mi marca">
+        <header class="midsection">
+            <h1>Destino: <span class="mexico">Mexico</span></h1><img class='logo' src="resources/rosa.jpg" alt="Logo de mi marca">
         </header>
-        <nav>
+        <nav class="midsection">
             <ul>
                 <li>Inicio</li>
                 <li>Rutas</li>
@@ -27,7 +25,7 @@ and open the template in the editor.
             </ul>
         </nav>
         
-        <section> <h1>Rutas</h1>
+        <section class="midsection" id="rutas"> <h1>Rutas</h1>
             <article>
                 <h2>A la Huasteca y de Regreso</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis lorem justo. 
@@ -42,13 +40,22 @@ and open the template in the editor.
                     Phasellus quis ex facilisis, euismod dui non, vestibulum eros. Praesent sit amet tortor ligula. Ut metus elit,
                     pharetra sit amet leo volutpat, ultrices feugiat augue. Sed bibendum gravida lacinia. Phasellus aliquet volutpat viverra.</p>
                 <div id="galeria">
-                    
+                    <div id="progressbar">Loading...<br/><progress max="100" value="35" ></progress> </div>
                 </div>
                 <aside>All the pictures in this trip were taken with this <a href="#">camera</a></aside>
             </article>
         </section>
 
-        <footer>
+        <section id="jsplayground" class="midsection">
+            <h1>Next the Java Script playground</h1>
+            <article>
+                <div>
+                    <script type="text/javascript" src="LearnJS.js"></script>
+                </div>
+            </article>
+        </section>
+        
+        <footer class="midsection">
             <p>
                 CopyRight 2018-2020. Reservados todos los derechos.
             </p>
