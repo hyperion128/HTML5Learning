@@ -8,11 +8,17 @@
 //document.write("<span class='mexico'>Hello World, im an imported js file</span>");
 //alert("This is an alert box");
 
-var x="uno";
-let y="dos";
-const pi=3.141516;
-document.write(x+"<br/>");
+var x=2;
+var y=3;
+var z=y/x;
+var pi=3.141516;
+stringvar="1+2*3";
+document.write(eval(stringvar)+"<br/>");
+document.write(10/"3"+"<br/>");
 x=1;
+a=5;b=6;
+a+=b*=2;
+document.write("a is:"+a+" and b is: "+b+"<br/>");
 var armas2manos =["Two Handed Sword","Battle Axe","War Mace"]; //esto es un array
 var player = {arma:"Pointy Stick", armadura:"Leather Armor", hp:100, mana:100};// esto es un objeto
 document.write(x+pi+"<br/>");
