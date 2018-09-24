@@ -35,3 +35,66 @@ document.write(calimbazo+"<br/>");
  * also comments
  * :)
  */
+
+var toprint="x";
+for (var initx=0;initx<10;initx++){
+    document.write(toprint+"<br/>");
+    toprint+="x";
+}
+//0 1 1 2 3 5 8 13
+var fibo1=0;
+var fibo2=1;
+var fibo3=0;
+while(fibo3<100){
+    document.write(fibo3+" ");
+    fibo3=fibo1+fibo2;
+    fibo1=fibo2;fibo2=fibo3;
+}
+document.write("<br/>");
+for (var i=1;i<=10; i++){
+    if (i===5){
+        continue;
+    }
+    document.write(i+" ");
+}
+document.write("<br/>");
+
+for (var i=1;i<=5; i++){
+    hacerladepedo("José",i,"extra");
+}
+
+for (var i=2;i<=5; i++){
+    document.write("3 a la ",i," potencia es:"+pow(3,i)+"<br/>");
+}
+
+
+var powerful=pow(2,5);
+document.write(powerful +"<br/>");
+
+var resultado=0, valor1=0;
+do{
+    valor1=prompt("Ingresa numero a calcular su cuadrado");
+    resultado=pow(valor1,2);
+}
+while (!confirm("Calcular cuadrado de "+valor1));
+alert("El cuadrado de "+valor1+" es "+resultado);
+
+
+alert("Hey niga... \n How are you?");
+var nombre=null;
+do{
+    nombre=prompt("Hey Nigga, whats your name?","Type your name here nigga.");
+}
+while(nombre===null || nombre==="");
+
+function hacerladepedo(pedero, pedos){
+    document.write(pedero+" la esta haciendo de pedo "+pedos+" veces!!, plus "+arguments[2]+" <br/>");
+}
+
+function pow(x,y){
+    var base=x;
+    for(var i=2;i<=y;i++){
+        x*=base;
+    }
+    return x;
+}
