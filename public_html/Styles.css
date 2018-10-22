@@ -8,11 +8,36 @@ and open the template in the editor.
     Author     : Hagane
 */
 @import url('https://fonts.googleapis.com/css?family=Overlock|Permanent+Marker|Shojumaru');
+header:onload {
+    font-family: "Overlock";
+    font-size: 20px;
+    text-align: center;
+    color: goldenrod;
+    position: fixed !important;
+    top: 0px !important;
+    left: 187px !important;
+    width: 1509px !important;
+    z-index: 999;
+
+}
+
+.fadein {
+    opacity: 1;
+}
+
 header {
     font-family: "Overlock";
     font-size: 20px;
     text-align: center;
     color: goldenrod;
+    position: fixed !important;
+    top: 0px !important;
+    left: 187px !important;
+    width: 1509px !important;
+    z-index: 999;
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
 }
 footer {
     text-align: right;
@@ -46,5 +71,11 @@ body{
     margin: auto;
     border-top: 3px solid #333333;
     border-bottom: 1px solid #333333;
-    
+    position: relative;
+    top: 200px;
+}
+.playerarea{
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 10px;
 }

@@ -19,7 +19,7 @@ var _cuero = new armadura("Cuero",3,3);
 var _placas = new armadura("Placas",4,6);
 //jugadores
 var user=new player(100,100,_mandoble,_placas,"Hagane");
-var orc=new player(25,0,_espada,_cuero,"Orcules");
+var orc=new player(10,0,_espada,_cuero,"Orcules");
 
 
 // Ejecucion del Bisne
@@ -218,7 +218,15 @@ function enemyHP(){
     enemyhpbar.innerHTML = "HP <progress max="+inienemyhp+" value="+orc.hp+"></progress> "+orc.hp;
     if (orc.hp<=0){
         enemyhpbar.innerHTML="HP <progress value=0></progress> DEAD";
+        var aaaa=document.getElementById("ctable");
+        var a=document.getElementById("go-btn");
+        a.disabled=true;
+        //aaaa.style.display = "none";
         clearInterval(enemyHP_anim);
         clarInterval(deductOrcHP);
+        
     }
+    
+
+    
 }

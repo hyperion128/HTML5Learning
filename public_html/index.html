@@ -15,7 +15,7 @@ and open the template in the editor.
         <link rel="shortcut icon" href="resources/favicon.ico">
     </head>
     <body>
-        <header class="midsection">
+        <header class="midsection" id="kbza">
             <h1>Destino: <span class="mexico">Mexico</span></h1><img class='logo' src="resources/rosa.jpg" alt="Logo de mi marca">
         </header>
         <nav class="midsection">
@@ -50,13 +50,51 @@ and open the template in the editor.
         <section id="jsplayground" class="midsection">
             <h1>Next the Java Script playground</h1>
             <article>
-                <div>
+                <div style="margin: 20px">
                     <!--script type="text/javascript" src="js/LearnJS.js"></script-->
-                    <script type="text/javascript" src="js/lirogame.js"></script>
-                    <span id="tiempo"></span>
+                    <table >
+                        <tr >
+                            <td class="playerarea" width="500"><div id="playerinfo">[player]</div></td>
+                            
+                            <td class="playerarea" width="500"><div id="enemyinfo">[enemy]</div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="playerarea"><div id="textinfo">[text]</div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="playerarea">
+                                <div id="actionarea">
+                                    <input type="radio" name="actions" id="action1" checked> <span id="label1">Attack!</span> <br/>
+                                    <input type="radio" name="actions" id="action2"> Defend <br/>
+                                    <input type="radio" name="actions" id="action3"> Use Item <br/>
+                                    <input type="radio" name="actions" id="action4"> Change Gear
+                                </div>
+                            
+                                <input type="submit" id="go-btn" value="Go!">
+                            </td>
+                            </tr>
+                    </table>
+                </div>
+                    <span id="tiempo"></span><br/>
+                    <span id="tiempo12"></span>
+                    
+                <div id="ctable" style="margin: 20px">
+                    <table id="tabla2" style="background-color: #cccccc">
+                        <tr>
+                            <td colspan="2"><div style="text-align: center" id="t2c1">cel 1</div></td>
+                        </tr>
+                        <tr>
+                            <td><div id="t2c2">cel 2</div></td><td><div id="t2c3">cel 3</div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div style="text-align: center" id="t2c4">cel 4 </div></td>
+                        </tr>
+                    </table>
                 </div>
             </article>
         </section>
+        <!-- script type="text/javascript" src="js/lirogame.js"></script-->
+        <script type="text/javascript" src="js/imgSlider.js"></script>
         
         <footer class="midsection">
             <p>
